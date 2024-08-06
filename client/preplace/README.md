@@ -35,7 +35,7 @@ And this in Pixel's bundle:
 
 4. Next, we will calculate the amount of damage the enemy can deal.
 
-`var potentialDamage = items.weapons[tmpObj.weaponIndex].dmg * (config.weaponVariants[tmpObj[(index < 9 ? "prima" : "seconda") + "ryVariant"]].val) * (items.weapons[index].sDmg || 1) * (tmpObj.skinIndex == 40 ? 3.3 : 1);`
+`var potentialDamage = items.weapons[tmpObj.weaponIndex].dmg * (config.weaponVariants[tmpObj[(index < 9 ? "prima" : "seconda") + "ryVariant"]].val) * (items.weapons[index].sDmg || 1) * (tmpObj.skinIndex == 40 ? 3.3 : 1);`<br><br>
 Breakdown:<br>
   · `items.weapons[tmpObj.weaponIndex].dmg` - Retrieves default weapon damage.<br>
   · `config.weaponVariants[tmpObj[(index < 9 ? "prima" : "seconda") + "ryVariant"]].val` - Accounts for Weapon Variants (tailored to Pixel's bundle).<br>
