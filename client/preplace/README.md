@@ -52,4 +52,15 @@ And this in Pixel's bundle:
   - `(items.weapons[index].sDmg || 1)` - Accounts for extra building damage (differs from damage you deal to entities). **Currently only affects Great Hammer**.<br>
   - `(tmpObj.skinIndex == 40 ? 3.3 : 1)` - Accounts for extra damage dealt by Tank Gear.<br>
 
+  7. Finally, we must loop through the `et` (or `gameObjects`) array and filter by which objects can hit us.<br>
+     ### Note: There are better ways then to loop through gameObjects array every frame. It is very performance intensive.
+     ```
+     gameObjects.filter((object) => object.active && Utils.dist(player, object) <= player.scale + object.scale * 2).forEach((tmp) => {
+         if(tmp.buildHealth < potentialDamage) {
+             // continue your placing logic here
+         }
+     });```
+
+     The above code filters out the `gameObjects` array for objects that still exist, and are close enough to place to. It also checks if the build hp of the object is low enough for it to be broken.
+
 The rest will be off to you, check if the object can be broken, check if it is the object that will be broken, etc.
