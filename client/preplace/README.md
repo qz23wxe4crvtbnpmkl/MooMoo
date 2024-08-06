@@ -59,7 +59,8 @@ And this in Pixel's bundle:
          if(tmp.buildHealth < potentialDamage) {
              // continue your placing logic here
          }
-     });```
+     });
+     ```
 
      The above code filters out the `gameObjects` array for objects that still exist, and are close enough to place to. It also checks if the build hp of the object is low enough for it to be broken.
 
