@@ -4,6 +4,7 @@ Preplace was born out of the creative genius of Watersheep, a brilliant young mi
 ## Idea behind preplace
 The idea behind preplace (at least the one I am showcasing in this docs) is to place as fast as possible when the next Tick happens.
 The reason you can't put this in `function _i` (or `function updatePlayers`) is because there is a delay from the server to your client (thats the ping the game shows at the top).
+Preplace is about shaving off as much of that delay as possible.
 
 ## How to implement it?
 1. We must first track the time since the last Tick.
