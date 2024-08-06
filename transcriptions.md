@@ -1,8 +1,8 @@
-E -> player
-et -> gameObjects
-y -> tmpObj
-l -> xOffset
-c -> yOffset
-be -> delta
-R -> items
+E -> player<br>
+et -> gameObjects<br>
+y -> tmpObj<br>
+l -> xOffset<br>
+c -> yOffset<br>
+be -> delta<br>
+R -> items<br>
 e -> data
