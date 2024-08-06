@@ -6,3 +6,9 @@ Below are the Projectiles Distance Per Tick values (in order with the Projectile
 ```
 const projDistancePerTick = [1.6, 1.6, 2.5, 2, NaN, 3.6].map(e => e * (1e3/9));
 ```
+
+## Examples
+Figuring out when a turret will hit you:
+```
+const tick = tickCount + (Math.ceil(Utils.dist(turretObject, player, 0, 2) / ((1e3/9) * 1.6)));
+```
