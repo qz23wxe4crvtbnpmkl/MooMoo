@@ -33,7 +33,17 @@ And this in Pixel's bundle:
 
 3. Make sure to add a condition to check if y/tmpObj is a player (through `y.isPlayer` or `tmpObj.isPlayer`).
 
-4. Next, we will calculate the amount of damage the enemy can deal.
+4. Before we continue further, we much check to see if all the timings are aligned. In order for this system to work, you must know your FPS (replace 60 with your fps).
+
+   The timing logic is as follows: `((Date.now() - TimeSinceTick) + (1000/60)) >= (1000/9)`.<br>
+   ### Breakdown:
+   - `(Date.now() - TimeSinceTick)` - Time in milliseconds from the last tick.
+   - `(1000/60)` - Time in milliseconds per frame.
+   - `(1000/9)` - Tick Rate.
+  
+   This code essentially sees if the time aligns with the next tick call.
+
+6. Next, we will calculate the amount of damage the enemy can deal.
 
 `var potentialDamage = items.weapons[tmpObj.weaponIndex].dmg * (config.weaponVariants[tmpObj[(index < 9 ? "prima" : "seconda") + "ryVariant"]].val) * (items.weapons[index].sDmg || 1) * (tmpObj.skinIndex == 40 ? 3.3 : 1);`<br><br>
 Breakdown:<br>
@@ -41,3 +51,5 @@ Breakdown:<br>
   · `config.weaponVariants[tmpObj[(index < 9 ? "prima" : "seconda") + "ryVariant"]].val` - Accounts for Weapon Variants (tailored to Pixel's bundle).<br>
   · `(items.weapons[index].sDmg || 1)` - Accounts for extra building damage (differs from damage you deal to entities). **Currently only affects Great Hammer**.<br>
   · `(tmpObj.skinIndex == 40 ? 3.3 : 1)` - Accounts for extra damage dealt by Tank Gear.<br>
+
+The rest will be off to you, check if the object can be broken, check if it is the object that will be broken, etc.
