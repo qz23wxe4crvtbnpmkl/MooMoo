@@ -20,8 +20,8 @@ function updatePlayers(data) {
 
 We will do our calculations inside the player loop, which looks like this in bundle:
 ```
-        for (var t = 0; t < Game.players.length + ye.length; ++t)
-            if (y = Game.players[t] || ye[t - Game.players.length],
+        for (var t = 0; t < J.length + ye.length; ++t)
+            if (y = J[t] || ye[t - J.length],
                 y.visible) {
 ```
 And this in Pixel's bundle:
