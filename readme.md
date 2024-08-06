@@ -1,5 +1,5 @@
 # **Note: All code is written in bundle format.**
-## You can find the translations for bundle -> Pixelzyx's bundle at ![transcriptions.md](https://raw.githubusercontent.com/qz23wxe4crvtbnpmkl/MooMoo/main/transcriptions.md).
+## You can find the translations for bundle -> Pixelzyx's bundle at [transcriptions.md](https://raw.githubusercontent.com/qz23wxe4crvtbnpmkl/MooMoo/main/transcriptions.md).
 
 # What is this?
 In the dimly lit, cramped apartment of Iambic, a brilliant hacker with a penchant for poetry, the air was thick with the smell of stale pizza and burnt coffee. Onion, a lanky, bespectacled hacker with a flair for the dramatic, slumped on the worn couch, surrounded by empty energy drink cans.
