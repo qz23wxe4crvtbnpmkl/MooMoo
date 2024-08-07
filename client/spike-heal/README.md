@@ -1,1 +1,1 @@
-![Spike Heal](https://streamable.com/ah1711)
+[Spike Heal](https://streamable.com/ah1711)
