@@ -1,1 +1,1 @@
-![Spike Heal](https://streamable.com/is81zl)
+[Spike Heal](https://streamable.com/is81zl)
